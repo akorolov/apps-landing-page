@@ -9,6 +9,7 @@ stages:
 variables:
   API_TOKEN: $DEPLOYMENT_TOKEN
   APP_PATH: '$CI_PROJECT_DIR/src'
+  GITLAB_DEPENDENCY_PROXY_ADDRESS: ""
 
 build_commit_image:
     stage: build
