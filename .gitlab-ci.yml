@@ -1,9 +1,29 @@
 before_script:
     - echo "$CI_REGISTRY_PASSWORD" | docker login -u $CI_REGISTRY_USER --password-stdin $CI_REGISTRY
 
+stages:
+    - build
+    - push
+    - deploy
+
 variables:
   API_TOKEN: $DEPLOYMENT_TOKEN
   APP_PATH: '$CI_PROJECT_DIR/src'
+
+build_commit_image:
+    stage: build
+    script:
+        - docker build -t $CI_REGISTRY_IMAGE:$CI_COMMIT_SHORT_SHA .
+        - docker push $CI_REGISTRY_IMAGE:$CI_COMMIT_SHORT_SHA
+
+push_latest:
+    stage: push 
+    only:
+      - main
+    script:
+        - docker pull $CI_REGISTRY_IMAGE:$CI_COMMIT_SHORT_SHA
+        - docker tag $CI_REGISTRY_IMAGE:$CI_COMMIT_SHORT_SHA $CI_REGISTRY_IMAGE:latest
+        - docker push $CI_REGISTRY_IMAGE:latest
 
 deploy:
   stage: deploy
