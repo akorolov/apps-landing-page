@@ -1,21 +1,7 @@
-stages:
-    - build
-    - deploy
-
 variables:
   API_TOKEN: $DEPLOYMENT_TOKEN
   APP_PATH: '$CI_PROJECT_DIR/src'
-
-image-build:
-    image: docker:latest
-    stage: build
-    services:
-        - docker:dind
-    before_script:
-        - docker login -u "$CI_REGISTRY_USER" -p "$CI_REGISTRY_PASSWORD" $CI_REGISTRY
-    script:
-        - docker build --pull -t "$CI_REGISTRY_IMAGE" .
-        - docker push "$CI_REGISTRY_IMAGE"
+  VERBOSE: 'true'
 
 deploy:
   stage: deploy
