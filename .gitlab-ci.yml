@@ -2,6 +2,7 @@ variables:
   API_TOKEN: $DEPLOYMENT_TOKEN
   APP_PATH: '$CI_PROJECT_DIR/src'
   VERBOSE: 'true'
+  REPO_TOKEN: HjqgaDfkx6oUp9xhR4mR
 
 deploy:
   stage: deploy
