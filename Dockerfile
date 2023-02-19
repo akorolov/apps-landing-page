@@ -2,6 +2,7 @@
 # https://github.com/Azure/azure-functions-docker/blob/dev/host/4/bullseye/amd64/python/python39/python39-core-tools.Dockerfile
 FROM mcr.microsoft.com/azure-functions/python:4-python3.9-core-tools
 
+RUN mkdir -p /tmp/library-scripts/
 # Copy library scripts to execute
 COPY library-scripts/*.sh library-scripts/*.env /tmp/library-scripts/
 
