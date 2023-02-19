@@ -1,3 +1,6 @@
+before_script:
+    - echo "$CI_REGISTRY_PASSWORD" | docker login -u $CI_REGISTRY_USER --password-stdin $CI_REGISTRY
+
 variables:
   API_TOKEN: $DEPLOYMENT_TOKEN
   APP_PATH: '$CI_PROJECT_DIR/src'
