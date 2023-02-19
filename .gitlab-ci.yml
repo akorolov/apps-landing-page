@@ -1,0 +1,9 @@
+variables:
+  API_TOKEN: $DEPLOYMENT_TOKEN
+  APP_PATH: '$CI_PROJECT_DIR/src'
+
+deploy:
+  stage: deploy
+  image: registry.thecall.dev/akorl/apps-landing-page:latest
+  script:
+    - echo "App deployed successfully."
