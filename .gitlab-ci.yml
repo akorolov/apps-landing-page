@@ -2,7 +2,7 @@ variables:
   API_TOKEN: $DEPLOYMENT_TOKEN
   APP_PATH: '$CI_PROJECT_DIR/src'
   VERBOSE: 'true'
-  REPO_TOKEN: 'HjqgaDfkx6oUp9xhR4mR'
+  REPO_TOKEN: 'azure'
 
 deploy:
   stage: deploy
