@@ -2,11 +2,7 @@
 # https://github.com/Azure/azure-functions-docker/blob/dev/host/4/bullseye/amd64/python/python39/python39-core-tools.Dockerfile
 FROM mcr.microsoft.com/azure-functions/python:4-python3.9-core-tools
 
-RUN mkdir -p /tmp/library-scripts/
-RUN dir bin
 COPY library-scripts/*.sh library-scripts/*.env /tmp/library-scripts/
-RUN dir /tmp/library-scripts
-
 
 # Install Node.js, Azure Static Web Apps CLI and Azure Functions Core Tools
 ARG NODE_VERSION="16"
