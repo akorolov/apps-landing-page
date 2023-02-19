@@ -4,6 +4,6 @@ variables:
 
 deploy:
   stage: deploy
-  image: gitlab.thecall.dev/akorl/apps-landing-page:latest
+  image: registry.thecall.dev/akorl/apps-landing-page:latest
   script:
     - echo "App deployed successfully."
