@@ -1,5 +1,10 @@
 stages:
     - build
+    - deploy
+
+variables:
+  API_TOKEN: $DEPLOYMENT_TOKEN
+  APP_PATH: '$CI_PROJECT_DIR/src'
 
 image-build:
     image: docker:latest
@@ -11,3 +16,10 @@ image-build:
     script:
         - docker build --pull -t "$CI_REGISTRY_IMAGE" .
         - docker push "$CI_REGISTRY_IMAGE"
+
+
+deploy:
+  stage: deploy
+  image: registry.gitlab.com/static-web-apps/azure-static-web-apps-deploy
+  script:
+    - echo "App deployed successfully."
