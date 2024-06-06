@@ -16,7 +16,9 @@ let messageFeed: Message[] = [
 ];
 let currentMessage = '';
 
-
+function timeout(ms: number) {
+    return new Promise(resolve => setTimeout(resolve, ms))
+}
 
 function scrollChatBottom(behavior?: ScrollBehavior): void {
     setTimeout(function() {
@@ -24,18 +26,27 @@ function scrollChatBottom(behavior?: ScrollBehavior): void {
     }, 200)
 }
 
-function SendMessage() {
+async function SendMessage() {
     messageFeed = [...messageFeed, {role: "user", content: currentMessage}];
     currentMessage = "";
-    loading = true;
     scrollChatBottom("smooth")
     currentMessage = "";
-    let timeout = Math.random() * 10000
-    setTimeout(function() {
-        messageFeed = [...messageFeed, {role: "cat", content: GenerateMessage()}]
-        loading = false;
+    let new_message = GenerateMessage()
+    let counter = 0
+    while (counter < new_message.length) {
+        if (counter > 0) {
+            await timeout(Math.random() * 200)
+            messageFeed.pop()
+            messageFeed = [...messageFeed, {role: "cat", content: new_message.slice(0, counter)}]
+        } else {
+            await timeout(Math.random() * 300)
+            messageFeed = [...messageFeed, {role: "cat", content: new_message.slice(0, counter)}]
+        }
         scrollChatBottom("smooth")
-    }, timeout)
+        counter += Math.ceil(Math.random() * 3)
+        messageFeed.pop()
+        messageFeed = [...messageFeed, {role: "cat", content: new_message.slice(0, counter)}]
+    }
 }
 
 				
