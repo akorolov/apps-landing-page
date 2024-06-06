@@ -58,7 +58,7 @@ async function SendMessage() {
 <div class="container h-full mx-auto flex flex-col items-center gap-4" style="max-width: 70vw">
 
 
-<div bind:this={elemChat} class="card py-5 px-14 overflow-y-auto bg-white w-full" style="max-height: 50vh">
+<div bind:this={elemChat} class="card py-5 px-14 overflow-y-auto bg-white w-full" style="max-height: 50vh; min-height: 100px;">
 
     <div class="grid grid-cols-5 gap-2">
 
@@ -98,7 +98,7 @@ async function SendMessage() {
 
 </div>
 
-<button class="btn btn-icon relative inset-x-1/2 -inset-y-10" style="margin-right: 35px; margin-bottom: -25px;" on:click={() => scrollChatBottom("smooth")}><span class="material-symbols-outlined">
+<button class="btn btn-icon relative inset-x-1/2 -inset-y-14" style="margin-right: 35px; margin-bottom: -55px;" on:click={() => scrollChatBottom("smooth")}><span class="material-symbols-outlined">
     arrow_cool_down
     </span></button>
 
