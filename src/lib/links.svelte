@@ -4,19 +4,19 @@
         <!-- (optionally you can provide a label here) -->
         <ul>
             <li>
-                <a href="https://dm.akorl.xyz/">
-                    <span class="badge bg-secondary-200"><span class="material-symbols-outlined">
-                        ifl
-                        </span></span>
-                    <span class="flex-auto">DM Initiative Tracker</span>
-                </a>
-            </li>
-            <li>
                 <a href="https://combat.akorl.xyz/">
                     <span class="badge bg-secondary-200"><span class="material-symbols-outlined">
                         ifl
                         </span></span>
                     <span class="flex-auto">Fabula Ultimata Combat Tracker</span>
+                </a>
+            </li>
+            <li>
+                <a href="https://dm.akorl.xyz/">
+                    <span class="badge bg-secondary-200"><span class="material-symbols-outlined">
+                        ifl
+                        </span></span>
+                    <span class="flex-auto">DM Initiative Tracker</span>
                 </a>
             </li>
             <li>
