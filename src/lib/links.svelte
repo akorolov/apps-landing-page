@@ -12,7 +12,7 @@
                 </a>
             </li>
             <li>
-                <a href="https://combat.akorl.xyz/">
+                <a href="https://conflict.akorl.xyz/">
                     <span class="badge bg-secondary-200"><span class="material-symbols-outlined">
                         ifl
                         </span></span>
