@@ -4,6 +4,14 @@
         <!-- (optionally you can provide a label here) -->
         <ul>
             <li>
+                <a href="https://blog.akorl.xyz/">
+                    <span class="badge bg-secondary-200"><span class="material-symbols-outlined">
+                        code_blocks
+                        </span></span>
+                    <span class="flex-auto">Blog</span>
+                </a>
+            </li>
+            <li>
                 <a href="https://combat.akorl.xyz/">
                     <span class="badge bg-secondary-200"><span class="material-symbols-outlined">
                         ifl
