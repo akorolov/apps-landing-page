@@ -12,6 +12,14 @@
                 </a>
             </li>
             <li>
+                <a href="https://combat.akorl.xyz/">
+                    <span class="badge bg-secondary-200"><span class="material-symbols-outlined">
+                        ifl
+                        </span></span>
+                    <span class="flex-auto">Fabula Ultimata Combat Tracker</span>
+                </a>
+            </li>
+            <li>
                 <a href="https://dm.thecall.dev/">
                     <span class="badge bg-secondary-200"><span class="material-symbols-outlined">
                         ifl
