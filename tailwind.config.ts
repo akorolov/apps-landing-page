@@ -1,12 +1,10 @@
-import { join } from 'path'
-import { createRequire } from 'module'
+import { join } from 'path';
 import type { Config } from 'tailwindcss'
 import forms from '@tailwindcss/forms';
 import typography from '@tailwindcss/typography';
 import { skeleton } from '@skeletonlabs/tw-plugin';
 import { custom1 } from './src/custom1'
 
-const require = createRequire(__filename)
 
 export default {
 	darkMode: 'class',
