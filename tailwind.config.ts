@@ -6,7 +6,7 @@ import typography from '@tailwindcss/typography';
 import { skeleton } from '@skeletonlabs/tw-plugin';
 import { custom1 } from './src/custom1'
 
-const require = createRequire(import.meta.url)
+const require = createRequire(__filename)
 
 export default {
 	darkMode: 'class',
