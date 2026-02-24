@@ -8,7 +8,7 @@
                     <span class="badge bg-secondary-200"><span class="material-symbols-outlined">
                         ifl
                         </span></span>
-                    <span class="flex-auto">Fabula Ultimata Combat Tracker</span>
+                    <span class="flex-auto">Fabula Ultima Combat Tracker</span>
                 </a>
             </li>
             <li>
