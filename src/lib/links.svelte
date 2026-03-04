@@ -6,17 +6,25 @@
             <li>
                 <a href="https://blog.akorl.xyz/">
                     <span class="badge bg-secondary-200"><span class="material-symbols-outlined">
-                        code_blocks
+                        library_books
                         </span></span>
                     <span class="flex-auto">Blog</span>
                 </a>
             </li>
             <li>
+                <a href="https://akorl.itch.io/the-tower-of-babble">
+                    <span class="badge bg-secondary-200"><span class="material-symbols-outlined">
+                        castle
+                        </span></span>
+                    <span class="flex-auto">The Tower of Babble</span>
+                </a>
+            </li>
+            <li>
                 <a href="https://conflict.akorl.xyz/">
                     <span class="badge bg-secondary-200"><span class="material-symbols-outlined">
-                        ifl
+                        sword_rose
                         </span></span>
-                    <span class="flex-auto">Fabula Ultima Combat Tracker</span>
+                    <span class="flex-auto">Fabula Ultima Conflict Tracker</span>
                 </a>
             </li>
             <li>
